@@ -1,46 +1,198 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>
-            Sign up Page Like Instagram
-            <link href = "style.css" rel = "stylesheet">
-            <link rel = "stylesheet" href = "https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
-        </title>
+        <meta charset="utf-8">
+        <title>instagram title page</title>
+        <link rel="stylesheet" href="style.css">
+        
     </head>
+    <style>
+          body{
+        background-color: #FAFAFA;
+    }
+    .table{ 
+        margin-top:80px;
+        margin-left: 700px;
+        margin-right:200px;
+        background-color:#FAFAFA;
+        text-align: center;
+    }
+    .headpic{
+        width:650px;
+    }
+    .logo{
+        width:400px;
+    }
+    .rightside{
+        margin-left: -600px;    }
+    .leftside{
+        margin-right: 850px;
+        width: 500px;
+    }
+    leftside#iphonespic{
+        width:800;
+    }
+    .OR{
+        text-align: center;
+        color:grey;
+    }
+    .text{
+        font-family:'Times New Roman', Times, serif;
+        font-size: 25px;
+        line-height: 5px;
+
+        color:grey;
+    }
+    #downloads{
+        width:200px;
+        height:65px;
+    }
+    #facebook{
+        width:350px;
+        height: 50px;
+    }
+    .partone{
+        background-color:white;
+        width:570px;
+        height:850px;
+        font-size: 20px;
+        border: 3px solid whitesmoke;
+    }
+    .parttwo{
+        background-color:white;
+        color:black;
+        font-size: 25px;
+        padding-top:50px;
+        width:570px;
+        height:100px;
+        border: 3px solid whitesmoke;
+    }
+    .myinput{
+        width:460px;
+        height: 50px;
+        font-size: 20px;
+        color:grey;
+        background-color: ghostwhite;
+        border-radius: 5px;
+        border:2px solid whitesmoke;
+    }
+    .fbbutton{
+        width:460px;
+        font-weight: bold;
+        height: 60px;
+        font-size: 20px;
+        background-color: #3897F0;
+        color: #FBFDFF;
+        border-radius: 8px;
+        background-image: url("C:\Users\redlbur\Downloads\Telegram Desktop\fb.PNG");
+        background-repeat: no-repeat;
+        background-position: 48px;
+        border:1px solid white;
+    }
+    .signbutton{
+        width:460px;
+        height: 60px;
+        font-size: 20px;
+        border-radius: 8px;
+        background-color: #3897F0;
+        color: #FBFDFF;
+        font-weight: bold;
+        border:1px solid white;
+    }
+    </style>
     <body>
-        <div class = "container">
-            <div class = "row">
-                <div class = "col-sm-6">
-                    <img src = "phone.png" class = "phone">
+        <div class="table">
+            <table>
+                <tr>
+                    <td>
+                        <div class="leftside">
+                            <img src="phone.png" class="headpic" alt="phones picture">
+                            
+    
+                        </div>
+                    </td>
+                    <td>
+                        <div class="rightside">
+                            <table class="partone">
+                                <tr>
+                                    <td>
+                                        <img src="instagram.png" class="logo" alt="instagram">
+                                    </td>
+                                </tr>
+                                <tr>
+                                     <td>
+                                        <button class="fbbutton" >
+                                            Войти через Facebook
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p class="OR">
+                                            ИЛИ
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="text" class="myinput" autofocus placeholder="<obile Number or Email>">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="text" class="myinput" autofocus placeholder="Full Name">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="text" class="myinput" autofocus placeholder="Username">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="password" class="myinput" autofocus placeholder="Password">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <button class="signbutton">
+                                            Регистрация
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="text">
+                                            <p>Регистрируясь, вы принимаете наши </p>
+                                            <p>Условия, Политику использования данных и </p>
+                                            <p>Политику в отношении файлов cookie</p>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                            <p class="parttwo">
+                                Есть аккаунт? <a href="#">Вход</a>
+                            </p>
+                            <p style="color:black ">
+                                Установите приложение.
+                            </p>
+                        <table>
+                            <tr>
+                                <td><img id="downloads" src="https://www.instagram.com/static/images/appstore-install-badges/badge_ios_russian-ru.png/bfba6d0fd6bd.png"></td>
+                                <td><img id="downloads" src="https://www.instagram.com/static/images/appstore-install-badges/badge_android_russian-ru.png/4c70948c09f3.png"></td>
+                                <td><img id="downloads" src="https://www.instagram.com/static/images/appstore-install-badges/badge_microsoft_russian-ru.png/5015b6cf7a69.png"></td>
+                            </tr>
+                        </table>
+                        </div>
                 </div>
-                <div class = "col-sm-6">
-                    <div class = "right-column text-center">
-                        <img src = "instagram.png" class = "instagram-log">
-                            <p class = "info">Sign up to see photos and videos from your friends.</p>
-                            <button type = "submit" class = "btn btn-primary btn-block"><img src = "facebook.png">Log in with Facebook</button>
-                            <p class = "or">OR</p>
-                            <form>
-                                <div class = "form-group">
-                                    <input type = "text" class = "form-control" placeholder="Mobile Number or Email">
-                                </div>
-                                <div class = "form-group">
-                                    <input type = "text" class = "form-control" placeholder="Full Name">
-                                </div>
-                                <div class = "form-group">
-                                    <input type = "text" class = "form-control" placeholder="Username">
-                                </div>
-                                <div class = "form-group">
-                                    <input type = "password" class = "form-control" placeholder="Password">
-                                </div>
-                                <button type = "submit" class = "btn btn-primary btn-block">Sign up</button>
-                            </form>
-                            <p class = "terms">By siginig up, you agree to our <b>Term, Data Policy</b> and <b>Cookies Policy</b>.</p>
-                    </div>
-                    <div class = "right-column-login text-center">
-                        <p>Have an account?<a href = "#"> Login</a></p>
-                    </div>
-                </div>
-            </div>
+            </td>
+        </tr>
+
+    </table>
+        <script>
+        </script>
+    </body>
+</html>
         </div>
     </body>
 </html>
